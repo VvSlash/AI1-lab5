@@ -1,0 +1,355 @@
+/* Ustawienia kolorów */
+:root {
+    --main-color: #fff200; /* Główny kolor tła */
+    --nav-primary-color: rgb(39, 0, 18); /* Kolor tła panelu nawigacyjnego */
+    --nav-secondary-color: #fff; /* Kolor tekstu panelu nawigacyjnego */
+    --first-color: #ff5733; /* Kolor tła sekcji "O nas" */
+    --second-color: #33ff57; /* Kolor tła sekcji "Oferta" */
+    --third-color: #5733ff; /* Kolor tła sekcji "Obsługa" */
+}
+.test{
+    text-align: center;
+}
+.hone { 
+    color: black;
+    display: block;
+    font-size: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+  }
+  .htwo { 
+    color: gray;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    font-weight: bolder;
+  }
+  .hthree { 
+    color: lightgray;
+    display: block;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+  }
+.pimg{
+    max-width: 80%;
+    float: left; 
+    margin: 1rem;
+    flex: 100%;
+}
+.justcol{
+    margin: 1rem;
+    columns: 3;
+    text-align: center;
+}
+
+ul.a {
+    list-style: inside;
+    list-style-type: disc;
+}
+ol.b {
+    list-style: inside;
+    list-style-type: upper-roman;
+}
+main {
+    margin-left: 0 auto;
+    margin-right: 250px;
+    background-color: var(--main-color);
+}
+/* Styl dla panelu nawigacyjnego */
+.navbar {
+    background-color: var(--nav-primary-color);
+    position: fixed;
+    top: 0;
+    right: 0; /* Panel boczny po prawej stronie */
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.logotype a {
+    color: var(--nav-secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.menu li {
+    margin: 0;
+    padding: 10px;
+}
+
+.menu a {
+    color: var(--nav-secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu li:hover {
+    display: block;
+    background-color: var(--nav-secondary-color);
+}
+
+.menu a:hover {
+    color: var(--nav-primary-color);
+}
+#styleLinksContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+#styleLinksContainer a {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Styl dla mega menu */
+header {
+    background-color: #29166dff;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.mega-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1001;
+    width: 300px;
+    background-color: #74c5f7ff;
+}
+
+.menu li:hover .mega-content {
+    display: block;
+}
+
+
+/* Styl sekcji "O nas" */
+#about {
+    border: 5px dotted;
+    color: var(--nav-primary-color);
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--first-color);
+}
+
+/* Styl sekcji "Oferta" */
+#offer {
+    border: 5px dotted;
+    color: var(--nav-primary-color);
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--second-color);
+}
+
+/* Styl sekcji "Obsługa" */
+#service {
+    border: 5px dotted;
+    color: var(--nav-primary-color);
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--third-color);
+}
+hr{
+    border-top: 5px dotted;
+    border-bottom: 0;
+}
+/* Styl przycisków */
+button {
+    color: var(--nav-secondary-color);
+    padding: 15px 30px;
+    background: var(--nav-primary-color);
+    border: dotted 5px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: var(--nav-primary-color);
+    transform: scale(1.05);
+    background-color: var(--nav-secondary-color);
+}
+
+/* Styl sekcji "Możliwości" */
+.capabilities {
+    padding: 20px;
+    background: var(--second-color);
+}
+
+.capabilities h2 {
+    color: var(--nav-primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.capability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    color: var(--nav-primary-color);
+}
+
+.capability img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.capability p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.capability a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.capability:hover {
+    transform: scale(1.05);
+    background-color: var(--nav-secondary-color);
+}
+
+/* Styl formularza kontaktowego */
+.contact {
+    padding: 20px;
+    color: white;
+    background-color: var(--first-color);
+    background-image: url(seamlesspatterns2.jpg);
+    text-align: center;
+}
+
+.contact form {
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="number"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Stylizacja stopki */
+footer {
+    margin-left: 0 auto;
+    margin-right: 250px;
+    background-color: var(--third-color);
+    color: var(--nav-primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent-color);
+}
+@media only screen and (max-width: 620px){
+    
+    
+    .capabilities-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: center;
+        justify-items: center;
+    }
+    .navbar {
+        
+        width: 150px;
+    }
+    main {
+        margin-left: 0 auto;
+        margin-right: 150px;
+        background-color: var(--main-color);
+    }
+    .contact form input{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .footer-logo img {
+        max-width: 100px;
+        height: auto;
+        fill: var(--nav-primary-color);
+    }
+    footer {
+        margin-right: 150px;
+    }
+}
